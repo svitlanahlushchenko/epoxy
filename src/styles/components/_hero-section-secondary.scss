@@ -1,0 +1,60 @@
+.hero-section-secondary {
+  position: relative;
+  background-image: url('../../../public/images/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $main-light;
+    padding-top: 180px;
+    text-align: center;
+    @media (max-width: $bp-tablet) {
+      font-size: 36px;
+      padding-top: 120px;
+    }
+
+    @media (max-width: $bp-mobile) {
+      font-size: 28px;
+      padding-top: 80px;
+    }
+  }
+  &__text {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 180px;
+    color: $main-light;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text-accent {
+    color: $accent;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $accent;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      bottom: 8px;
+      left: -12px;
+    }
+  }
+}

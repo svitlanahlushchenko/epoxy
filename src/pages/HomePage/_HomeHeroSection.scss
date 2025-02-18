@@ -1,14 +1,42 @@
+@use '../../styles/utils/variables' as *;
+
 .home-hero-section {
-  &__container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  margin-bottom: 32px;
+  position: relative;
+  background-image: url('../../../public/images/my-clock.jpg');
+  background-size: cover;
+  background-position: center;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
   }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+
   &__text-container {
     text-align: center;
+    padding: 180px 20px;
   }
+
   &__text {
     max-width: 520px;
     padding-top: 12px;
+    font-weight: 700;
+  }
+
+  &__title {
+    font-size: 56px;
   }
 }

@@ -1,3 +1,7 @@
+@use './variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@400;700&family=Satisfy&family=Pacifico&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,7 +11,7 @@ body {
   color: $main-dark;
   line-height: 1.5;
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', 'Raleway' sans-serif;
   background-color: $background;
   @media (max-width: $bp-tablet) {
     font-size: 14px;
@@ -46,7 +50,6 @@ ul,
 li {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .loading-spinner {
@@ -56,4 +59,9 @@ li {
   height: 100vh;
   font-size: 20px;
   color: blue;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

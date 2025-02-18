@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+
+# Тестовые логи
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Папки сборки и временные файлы
+dist/
+build/
+*.tgz
+
+# Файлы среды
+.env
+
+# macOS
+.DS_Store
+
+# IDE и редакторы
+.vscode/
+.idea/
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+
+# Другие временные файлы
+*.bak
+*.swp
+node_modules
+node_modules
+node_modules

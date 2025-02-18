@@ -1,0 +1,25 @@
+.home-info-section {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  &__image {
+    max-width: 50%;
+    border-radius: 12px;
+  }
+  &__title {
+    font-size: 28px;
+  }
+  &__text-container {
+    max-width: 50%;
+  }
+  &__text {
+    padding: 16px 0;
+  }
+}
+.reverse {
+  flex-direction: row-reverse;
+}

@@ -1,5 +1,7 @@
+@use '../utils/variables' as *;
+
 .navbar {
-  max-width: 1940px;
+  max-width: 1264px;
   margin: 0 auto;
   display: flex;
   gap: 40px;
@@ -27,6 +29,10 @@
       transform: scale(0.95);
     }
   }
+  &__logo-text {
+    font-family: 'Satisfy', cursive;
+    font-size: 32px;
+  }
   &__main-logo {
     width: 72px;
     height: 72px;
@@ -38,7 +44,7 @@
   }
   &__menu {
     display: flex;
-    gap: 40px;
+    gap: 60px;
     background-color: $main-light;
 
     @media (max-width: $bp-tablet) {

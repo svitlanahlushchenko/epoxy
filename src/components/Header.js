@@ -10,7 +10,6 @@ function Header() {
     setIsMenuOpen(prev => !prev);
   };
 
-  // Закриваємо меню при кліку за його межами
   useEffect(() => {
     const handleClickOutside = event => {
       if (
@@ -35,10 +34,10 @@ function Header() {
   }, [isMenuOpen]);
 
   return (
-    <nav className='navbar'>
+    <nav className='navbar '>
       <Link to='/' className='navbar__logo'>
         <img src='/images/logo.png' alt='Logo' className='navbar__main-logo' />
-        <p>Epoxidový svet</p>
+        <p className='navbar__logo-text'>Epoxidový svet</p>
       </Link>
 
       <div ref={menuRef}>
@@ -50,18 +49,11 @@ function Header() {
             <Link to='/about'>O epoxide</Link>
           </li>
           <li className='navbar__link'>
-            <Link to='/lessons'>Lekcie o živici </Link>
-          </li>
-          <li className='navbar__link'>
-            <Link to='/materials'>Materiály na prácu</Link>
-          </li>
-          <li className='navbar__link'>
-            <Link to='/finish'>Dokončenie a skladovanie</Link>
+            <Link to='/galery'>Galéria</Link>
           </li>
         </ul>
       </div>
 
-      {/* Кнопка з іконками ☰ / ✖ */}
       <button
         ref={buttonRef}
         className='navbar__toggle'

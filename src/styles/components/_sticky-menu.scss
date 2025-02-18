@@ -1,0 +1,68 @@
+@use '../utils/variables' as *;
+
+.sticky-menu {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__item {
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-block;
+    color: $main-dark;
+    font-weight: 700;
+    border: 1px solid $main-dark;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: $main-light;
+    text-align: center;
+    white-space: nowrap;
+
+    &:hover {
+      color: $main-light;
+      background-color: $main-dark;
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  @media (max-width: $bp-desktop) {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 8px;
+    justify-content: flex-start;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+    }
+
+    &__item {
+      flex-shrink: 0;
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    &__item {
+      font-size: 13px;
+      padding: 6px 10px;
+    }
+  }
+}

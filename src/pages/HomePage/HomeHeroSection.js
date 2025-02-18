@@ -4,6 +4,7 @@ function HomeHeroSection() {
   return (
     <main className='home-hero-section'>
       <div className='home-hero-section__container'>
+        <div className='home-hero-section__images'></div>
         <div className='home-hero-section__text-container'>
           <h1 className='home-hero-section__title'>Epoxidový svet</h1>
           <p className='home-hero-section__text'>
@@ -13,7 +14,6 @@ function HomeHeroSection() {
             výrobkov. Objavte kúzlo epoxidu s nami!
           </p>
         </div>
-        <div className='home-hero-section__images'></div>
       </div>
     </main>
   );

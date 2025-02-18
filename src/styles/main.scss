@@ -1,8 +1,13 @@
-@import './utils/variables';
-@import './utils/base';
+@forward './utils/variables';
+@forward './utils/base';
+@forward './utils/text';
+@forward './utils/menu';
 
-@import './components/container';
-@import './components/header';
-@import './components/hero-section-secondary';
+@forward './components/button';
+@forward './components/container';
+@forward './components/header';
+@forward './components/hero-section-secondary';
+@forward './components//sticky-menu';
 
-@import '../pages/HomePage/HomeHeroSection.scss';
+@forward '../pages/HomePage/HomeHeroSection.scss';
+@forward '../pages/HomePage/HomeInfoSection';

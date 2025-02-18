@@ -1,7 +1,12 @@
 .container {
   width: 100%;
-  max-width: 1320px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0;
   position: relative;
+}
+
+.section-container {
+  position: relative;
+  padding: 48px 12px 12px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
